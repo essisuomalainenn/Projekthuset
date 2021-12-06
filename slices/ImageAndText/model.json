@@ -11,6 +11,14 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageAndText",
       "primary": {
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
         "text": {
           "type": "StructuredText",
           "config": {
@@ -20,13 +28,13 @@
             "single": "heading4"
           }
         },
-        "image": {
+        "button": {
           "config": {
-            "label": "image",
-            "constraint": {},
-            "thumbnails": []
+            "label": "button",
+            "placeholder": "",
+            "select": "media"
           },
-          "type": "Image"
+          "type": "Link"
         }
       },
       "items": {}

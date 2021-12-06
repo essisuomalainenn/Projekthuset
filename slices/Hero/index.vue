@@ -15,7 +15,6 @@
         </div>
       </header>
       <div class="header-text-container">
-        <!--  <h1 class="title">{{ slice.primary.title.text }}</h1> -->
         <prismic-rich-text
           :field="slice.primary.title"
           class="text-3xl text-white title"
