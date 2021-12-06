@@ -38,6 +38,7 @@ export default {
   text-align: center;
   padding: 1rem;
   text-align: left;
+  padding-bottom: 4rem;
 }
 
 a {

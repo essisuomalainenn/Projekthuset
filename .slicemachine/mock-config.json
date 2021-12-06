@@ -1,20 +1,8 @@
 {
-  "slices": {
-    "ImageAndText": {
-      "default-slice": {
-        "primary": {
-          "text": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    }
-  },
+  "slices": {},
   "_cts": {
     "page": {},
-    "homepage": {}
+    "homepage": {},
+    "footer": {}
   }
 }

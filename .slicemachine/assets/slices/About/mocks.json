@@ -8,20 +8,20 @@
       "about-title": [
         {
           "type": "heading2",
-          "text": "Orchestrate distributed e-business",
+          "text": "Whiteboard real-time synergies",
           "spans": []
         }
       ],
       "text": [
         {
           "type": "paragraph",
-          "text": "Reprehenderit aliquip enim ad. Non eiusmod ipsum minim commodo velit ad dolor ex dolor.",
+          "text": "Enim in exercitation proident irure amet. Voluptate cupidatat sint dolor eu ea ut voluptate consequat ex cillum minim ipsum commodo aute nulla.",
           "spans": []
         }
       ],
       "Verksamheter": {
         "link_type": "Web",
-        "url": "https://prismic.io"
+        "url": "https://slicemachine.dev"
       },
       "logo": {
         "dimensions": {
@@ -30,7 +30,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
       }
     }
   }
