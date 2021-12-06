@@ -1,24 +1,5 @@
 {
-  "slices": {
-    "About": {
-      "default-slice": {
-        "primary": {
-          "about-title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "text": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    }
-  },
+  "slices": {},
   "_cts": {
     "page": {},
     "homepage": {}

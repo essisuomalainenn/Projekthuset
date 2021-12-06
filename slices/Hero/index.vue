@@ -76,7 +76,6 @@ export default {
 .logo {
   transition: all 0.25s ease;
   width: auto;
-  height: 65px;
   max-width: 200px;
   display: block;
 }
