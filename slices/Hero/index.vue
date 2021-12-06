@@ -33,9 +33,9 @@
       <div class="teaser-item-wrapper">
         <a href="#">
           <div
-            class="ikon"
             v-for="(item, i) in slice.items"
             :key="`slice-item-${i}`"
+            class="ikon"
           >
             <prismic-image
               class="ikon-svg shadow-xl fill-current text-white leading-7"
