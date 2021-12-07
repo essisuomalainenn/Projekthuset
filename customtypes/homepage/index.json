@@ -28,6 +28,9 @@
             },
             "project": {
               "type": "SharedSlice"
+            },
+            "contact": {
+              "type": "SharedSlice"
             }
           }
         }
