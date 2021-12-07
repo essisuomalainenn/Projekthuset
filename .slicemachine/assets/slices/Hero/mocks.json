@@ -12,12 +12,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
         },
         "text": [
           {
             "type": "paragraph",
-            "text": "Mollit laborum nisi ea exercitation. Esse commodo velit enim eu ut commodo in exercitation consectetur deserunt commodo nisi quis adipisicing.",
+            "text": "Dolore amet occaecat occaecat veniam nulla veniam est. Reprehenderit fugiat irure mollit tempor do veniam Lorem officia irure aliqua consequat nostrud fugiat ullamco. Cillum sint ipsum dolore sit duis ipsum nisi qui fugiat esse labore ex eu qui amet.",
             "spans": []
           }
         ]
@@ -30,12 +30,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
         },
         "text": [
           {
             "type": "paragraph",
-            "text": "Voluptate eu voluptate consequat anim voluptate consectetur aliquip aute occaecat cupidatat non dolore ut. Tempor officia occaecat quis dolor. Cupidatat pariatur incididunt commodo tempor sit sint excepteur excepteur ad anim.",
+            "text": "Quis enim consectetur aliquip cillum mollit ullamco est adipisicing eu ea.",
             "spans": []
           }
         ]
@@ -48,12 +48,48 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
         },
         "text": [
           {
             "type": "paragraph",
-            "text": "Consequat deserunt proident nostrud pariatur deserunt reprehenderit sint cupidatat culpa culpa ea laborum velit. Ea aute et qui nisi deserunt officia magna magna aliqua elit. Sit voluptate fugiat Lorem do sunt ipsum qui esse aliqua magna dolor adipisicing ullamco eiusmod.",
+            "text": "Enim qui nostrud labore. Tempor dolor dolore magna nulla enim cillum ad exercitation eu sit eu.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Cillum magna excepteur tempor elit mollit et. Deserunt esse aute pariatur eu id consectetur elit aute aute cillum Lorem consectetur.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Minim et fugiat tempor do consequat quis voluptate aliquip fugiat do consectetur est elit proident. Aute fugiat culpa non ad consequat elit officia velit nostrud.",
             "spans": []
           }
         ]
@@ -67,19 +103,19 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
       },
       "title": [
         {
           "type": "heading1",
-          "text": "Leverage cutting-edge channels",
+          "text": "Expedite visionary niches",
           "spans": []
         }
       ],
       "text": [
         {
           "type": "paragraph",
-          "text": "Cillum minim aliquip pariatur. Dolor irure non magna eiusmod.",
+          "text": "Laborum cupidatat quis ipsum irure sint nulla id laborum cillum sunt ex. Exercitation elit eu veniam deserunt qui ut occaecat enim quis consequat. Lorem minim nisi qui laborum consequat commodo nostrud nisi ipsum veniam sint adipisicing tempor officia.",
           "spans": []
         }
       ],
@@ -90,30 +126,12 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
-      },
-      "menu-closed": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
-      },
-      "menu-open": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
       },
       "about-text": [
         {
           "type": "heading4",
-          "text": "Productize clicks-and-mortar web-readiness",
+          "text": "Implement seamless infomediaries",
           "spans": []
         }
       ]

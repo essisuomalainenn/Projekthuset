@@ -1,0 +1,16 @@
+{
+  "id": "2a7a85ec-033d-4d06-bfc8-b98547befcb0",
+  "uid": "nemo-voluptatem-et",
+  "type": "header",
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+    }
+  }
+}

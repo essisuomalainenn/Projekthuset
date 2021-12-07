@@ -1,6 +1,46 @@
 {
-  "id": "eda7f8ca-6bad-4b1a-8283-0b2ad4fb639e",
-  "uid": "enim-nesciunt-porro",
+  "id": "53d78f62-a362-48d0-8f81-ced143117e0d",
+  "uid": "quam-omnis-iste",
   "type": "footer",
-  "data": {}
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+    },
+    "companyName": [
+      {
+        "type": "paragraph",
+        "text": "Officia occaecat nulla nostrud consectetur deserunt do sint consequat excepteur in.",
+        "spans": []
+      }
+    ],
+    "address": [
+      {
+        "type": "paragraph",
+        "text": "Voluptate nisi proident excepteur labore exercitation sunt sit dolor mollit exercitation elit ex veniam excepteur. Magna labore id occaecat consectetur amet dolore nulla Lorem anim reprehenderit cillum occaecat. Ut aliquip excepteur sit incididunt mollit pariatur elit enim consequat.",
+        "spans": []
+      }
+    ],
+    "euImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+    },
+    "creditsText": [
+      {
+        "type": "paragraph",
+        "text": "Non tempor nostrud id. Proident exercitation nostrud commodo.",
+        "spans": []
+      }
+    ]
+  }
 }

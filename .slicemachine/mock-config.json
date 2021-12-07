@@ -1,8 +1,22 @@
 {
-  "slices": {},
+  "slices": {
+    "Hero": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
+  },
   "_cts": {
     "page": {},
     "homepage": {},
-    "footer": {}
+    "footer": {
+      "companyName": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "header": {}
   }
 }

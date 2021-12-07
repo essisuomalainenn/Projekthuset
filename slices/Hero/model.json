@@ -45,22 +45,6 @@
           },
           "type": "Image"
         },
-        "menu-closed": {
-          "config": {
-            "label": "menu-closed",
-            "constraint": {},
-            "thumbnails": []
-          },
-          "type": "Image"
-        },
-        "menu-open": {
-          "config": {
-            "label": "menu-open",
-            "constraint": {},
-            "thumbnails": []
-          },
-          "type": "Image"
-        },
         "about-text": {
           "config": {
             "label": "about-text",

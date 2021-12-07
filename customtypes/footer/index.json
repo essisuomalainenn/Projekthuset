@@ -12,16 +12,48 @@
         },
         "type": "UID"
       },
-      "slices": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
+      "logo": {
         "config": {
-          "choices": {
-            "footer": {
-              "type": "SharedSlice"
-            }
-          }
-        }
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "companyName": {
+        "config": {
+          "label": "companyName",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        },
+        "type": "StructuredText"
+      },
+      "address": {
+        "config": {
+          "label": "addressText",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        },
+        "type": "StructuredText"
+      },
+      "euImage": {
+        "config": {
+          "label": "euImage",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "creditsText": {
+        "config": {
+          "label": "creditsText",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        },
+        "type": "StructuredText"
       }
     }
   }

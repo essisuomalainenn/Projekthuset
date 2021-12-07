@@ -10,7 +10,7 @@
     <div class="container">
       <prismic-rich-text
         :field="slice.primary.text"
-        class="text-2xl text-white text font-bolder tracking-wide description"
+        class="text-1xl text-white text font-bolder tracking-wide description"
       />
       <prismic-link :field="slice.primary.button" class=" bg-red-500 hover:bg-red-700 mt-8 link">Kontakta oss</prismic-link>
     </div>
@@ -55,7 +55,7 @@ export default {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1rem;
+    padding: 1rem;
     text-align:left;
 } 
 
@@ -82,7 +82,7 @@ export default {
 
 .description {
   z-index: 10;
-  margin-bottom: 5rem;
+  margin-bottom: 4.2rem
 }
 
 a {

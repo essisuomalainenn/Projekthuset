@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nuxt />
+    <Footer v-if="!$fetchState.pending" :data="footer" />
   </div>
 </template>
 

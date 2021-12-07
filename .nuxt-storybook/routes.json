@@ -2,14 +2,12 @@
   {
     "name": "prismic-preview",
     "path": "/preview",
-    "component": "/Users/essisuomalainen/Desktop/Projekt/projekt-huset/.nuxt-storybook/prismic/pages/preview.vue",
-    "_name": "_3c3f7fc4"
+    "component": "/Users/essisuomalainen/Desktop/Projekt/projekt-huset/.nuxt-storybook/prismic/pages/preview.vue"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/essisuomalainen/Desktop/Projekt/projekt-huset/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_f9c0682e"
+    "chunkName": "pages/index"
   }
 ]

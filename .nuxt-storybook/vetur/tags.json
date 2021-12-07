@@ -5,6 +5,9 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },

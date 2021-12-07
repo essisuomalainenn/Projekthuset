@@ -39,6 +39,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // nuxt svgs
+    '@nuxtjs/svg'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,6 +51,14 @@ export default {
   build: {
     transpile: ["vue-slicezone", "nuxt-sm"]
   },
+  svg: {
+    vueSvgLoader: {
+        // vue-svg-loader options
+    },
+    svgSpriteLoader: {
+        // svg-sprite-loader options
+    }
+},
   storybook: {
     // This is a bug with `getStoriesPaths` and Nuxt that is awaiting to be fixed
     stories: [...getStoriesPaths().map(path => path.replace("../", "~/"))]

@@ -124,6 +124,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container {
@@ -140,7 +141,7 @@ export default {
 }
 
 .ikon {
-  margin: 3rem;
+  margin: 2rem;
 }
 .ikon-svg {
   fill: #cb333b;
@@ -148,8 +149,8 @@ export default {
   background-color: #e6e4d6;
   display: inline-block;
   border-radius: 50%;
-  height: 9em;
-  width: 9em;
+  height: 8em;
+  width: 8em;
   text-align: center;
   margin-bottom: 1.5rem;
 
