@@ -31,6 +31,9 @@
             },
             "contact": {
               "type": "SharedSlice"
+            },
+            "activities": {
+              "type": "SharedSlice"
             }
           }
         }

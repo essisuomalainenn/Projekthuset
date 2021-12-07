@@ -1,27 +1,9 @@
 {
   "slices": {
-    "Contact": {
+    "Activities": {
       "default-slice": {
         "items": {
-          "name": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "phoneNumber": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "jobTitle": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "text": {
+          "activityName": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

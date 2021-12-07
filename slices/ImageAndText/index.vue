@@ -12,7 +12,11 @@
         :field="slice.primary.text"
         class="text-1xl text-white text font-bolder tracking-wide description"
       />
-      <prismic-link :field="slice.primary.button" class=" bg-red-500 hover:bg-red-700 mt-8 link">Kontakta oss</prismic-link>
+      <prismic-link
+        :field="slice.primary.button"
+        class="bg-red-500 hover:bg-red-700 mt-8 link"
+        >Kontakta oss</prismic-link
+      >
     </div>
   </section>
 </template>
@@ -49,15 +53,15 @@ export default {
 
 .container {
   position: relative;
-    clear: both;
-    margin-top: 2rem;
-    overflow: hidden;
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    text-align:left;
-} 
+  clear: both;
+  margin-top: 2rem;
+  overflow: hidden;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  text-align: left;
+}
 
 .link {
   color: #e6e4d6;
@@ -77,12 +81,12 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(62,64,64,.9);
+  background-color: rgba(62, 64, 64, 0.9);
 }
 
 .description {
   z-index: 10;
-  margin-bottom: 4.2rem
+  margin-bottom: 4.2rem;
 }
 
 a {

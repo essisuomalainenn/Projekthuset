@@ -1,0 +1,62 @@
+{
+  "id": "activities",
+  "type": "SharedSlice",
+  "name": "Activities",
+  "description": "Activities",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Activities",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "logo": {
+          "config": {
+            "label": "logo",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {
+        "activityName": {
+          "config": {
+            "label": "activityName",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "list-item"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}
