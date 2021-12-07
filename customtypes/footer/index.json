@@ -7,7 +7,7 @@
     "Main": {
       "uid": {
         "config": {
-          "label": "uid",
+          "label": "footer",
           "placeholder": ""
         },
         "type": "UID"

@@ -28,21 +28,24 @@
     <prismic-image :field="slice.primary.image" />
     <!--  <pre>{{slice}}</pre>  -->
     <div class="container teasers">
-      <a href="#"> <prismic-rich-text :field="slice.primary['about-text']" class="text-lg font-bolder m-8" /> </a>
+      <a href="#">
+        <prismic-rich-text
+          :field="slice.primary['about-text']"
+          class="text-lg font-bolder m-8"
+        />
+      </a>
       <div class="teaser-item-wrapper">
-        <a href="#">
-          <div
-            v-for="(item, i) in slice.items"
-            :key="`slice-item-${i}`"
-            class="ikon"
-          >
-            <prismic-image
-              class="ikon-svg shadow-xl fill-current text-white leading-7"
-              :field="item.image"
-            />
-            <prismic-rich-text :field="item.text" />
-          </div>
-        </a>
+        <div
+          v-for="(item, i) in slice.items"
+          :key="`slice-item-${i}`"
+          class="ikon"
+        >
+          <prismic-image
+            class="ikon-svg shadow-xl fill-current text-white leading-7"
+            :field="item.image"
+          />
+          <prismic-rich-text :field="item.text" />
+        </div>
       </div>
     </div>
   </section>
@@ -119,7 +122,8 @@ export default {
 
 .teaser-item-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -136,7 +140,7 @@ export default {
 }
 
 .ikon {
-  margin-bottom: 5rem;
+  margin: 3rem;
 }
 .ikon-svg {
   fill: #cb333b;
