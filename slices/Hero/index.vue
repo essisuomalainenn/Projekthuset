@@ -8,12 +8,12 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <header class="site-header">
+   <!--    <header class="site-header">
         <div class="container">
           <prismic-image :field="slice.primary.logo" class="logo" />
           <prismic-image :field="slice.primary['menu-open']" class="menu" />
         </div>
-      </header>
+      </header> -->
       <div class="header-text-container">
         <prismic-rich-text
           :field="slice.primary.title"

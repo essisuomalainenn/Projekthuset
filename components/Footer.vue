@@ -7,7 +7,7 @@
         class="pl-4 font-extrabold"
       />
       <prismic-rich-text :field="data.data.address" class="pl-4" />
-      <img src="@/assets/EUlogo_v_mono.png" alt="" class="eu-logo" />
+      <img src="@/assets/EUlogo_v_mono.png" alt="European Union Logo" class="eu-logo" />
       <div class="credits-container flex">
         <prismic-rich-text :field="data.data.creditsText" class="pl-4" />
         <a href="https://wilsoncreative.se/">&nbsp; Wilson Creative</a>

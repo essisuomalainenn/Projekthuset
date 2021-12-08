@@ -1,12 +1,15 @@
 <template>
   <div>
     <Nuxt />
+    <Header />
     <Footer v-if="!$fetchState.pending" :data="footer" />
   </div>
 </template>
 
 <script>
+
 export default {
+  components: { },
   data: () => ({
     footer: {},
   }),
