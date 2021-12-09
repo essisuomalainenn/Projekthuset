@@ -1,77 +1,35 @@
 <template>
   <div
-    class="overflow-hidden fixed inset-0 w-full h-full z-[200]"
+    class="overflow-hidden fixed inset-y-0 right-0 w-full h-full sm:w-1/2 z-[200]"
     :class="[
       open ? 'opacity-1 pointer-events-auto' : 'opacity-0 pointer-events-none',
     ]"
   >
     <div
-      v-for="(color, index) in colors"
-      :key="'nav-bg-left-' + index"
-      ref="left"
-      class="w-1/2 h-full absolute bottom-0 left-0"
-      :class="[colors[index], z[index]]"
-    />
-    <div
-      v-for="(color, index) in colors"
-      :key="'nav-bg-right-' + index"
-      ref="right"
-      class="w-1/2 h-full absolute bottom-0 right-0"
-      :class="[colors[index], z[index]]"
-    />
-
-    <div class="w-full h-full absolute inset-0 z-50 flex items-center px-[6vw]">
-      <div>
-        <nav>
-          <ul class="leading-snug">
-            <li
-              v-for="(item, index) in $store.state.navigation.navData.items"
-              :key="'nav-item-' + index"
-              class="text-[6vw]"
-            >
-              <prismic-link
-                :field="item.link"
-                class="
-                  block
-                  hover:text-brand-light
-                  transition-colors
-                  duration-200
-                "
-                >{{ item.title }}</prismic-link
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <nav>
-          <ul class="leading-snug space-x-10 mt-10">
-            <li
-              v-for="(item, index) in $store.state.navigation.navData
-                .secondaryItems"
-              :key="'nav-item-' + index"
-              class="inline-block text-[1.8vw]"
-            >
-              <prismic-link
-                :field="item.link"
-                class="
-                  block
-                  text-gray-400
-                  hover:text-brand-light
-                  transition-colors
-                  duration-200
-                "
-                >{{ item.title }}</prismic-link
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+      class="w-full h-full p-14 absolute bg-black inset-y-0 right-0 z-50 flex items-center px-[6vw]"
+    >
+      <menuOpen
+        class="absolute inset-y-1 right-0 mt-3 menu-open"
+        @click="toggleNav"
+      />
+      <nav class="menu">
+        <ul class="sm:text-6xl">
+          <li>Verksamheter</li>
+          <li>Projekt</li>
+          <li>Kontakt</li>
+          <li>Om projekthuset</li>
+        </ul>
+      </nav>
     </div>
   </div>
 </template>
 
 <script>
+import menuOpen from '~/assets/close.svg?inline'
+
 export default {
+  components: { menuOpen },
+
   data() {
     return {
       colors: ['bg-[#1F1F1F]', 'bg-[#1A1A1A]', 'bg-[#161616]'],
@@ -82,18 +40,20 @@ export default {
   methods: {
     toggleNav() {
       if (this.open) {
-        this.closeAnimation()
+        this.open = false
+        console.log('open')
       } else {
-        this.openAnimation()
+        this.open = true
+        console.log('close')
       }
     },
-    hideNav() {
+    /*   hideNav() {
       this.open = false
     },
     showNav() {
       this.open = true
-    },
-  /*   openAnimation() {
+    }, */
+    /*   openAnimation() {
       const gsap = this.$gsap
       gsap.fromTo(
         this.$refs.right,
@@ -143,4 +103,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.menu {
+  color: white;
+}
+
+li {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-open {
+  margin-right: 1rem;
+  fill: white;
+}
+</style>

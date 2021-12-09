@@ -8,7 +8,7 @@
   >
     <div class="overlay"></div>
     <div class="container">
-   <!--    <header class="site-header">
+      <!--    <header class="site-header">
         <div class="container">
           <prismic-image :field="slice.primary.logo" class="logo" />
           <prismic-image :field="slice.primary['menu-open']" class="menu" />
@@ -125,6 +125,9 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .container {

@@ -57,8 +57,6 @@ export default {
   margin-top: 2rem;
   overflow: hidden;
   max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
   padding: 1rem;
   text-align: left;
 }

@@ -4,8 +4,9 @@
       class="fixed top-0 left-0 h-24 flex justify-between z-[1000] site-header"
     >
       <img src="@/assets/projekthuset_logo.png" alt="" class="h-16" />
-      <menuClosed class="h-auto menu-closed" />
+      <menuClosed class="h-auto menu-closed" @click="toggleNav" />
     </div>
+    <Navigation ref="mainNav" />
   </div>
 </template>
 
@@ -18,6 +19,11 @@ export default {
     toggleNav() {
       this.$refs.mainNav.toggleNav()
     },
+    data() {
+      return {
+        isHidden: true,
+      }
+    },
   },
 }
 </script>
@@ -25,7 +31,6 @@ export default {
 <style>
 .site-header {
   position: fixed;
-  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
@@ -35,7 +40,7 @@ export default {
 }
 
 .menu-closed {
-    width: 3.5rem;
-    fill: white;
+  width: 3.5rem;
+  fill: white;
 }
 </style>
