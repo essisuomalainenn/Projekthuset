@@ -12,7 +12,7 @@
         <prismic-image :field="slice.primary.logo" class="activity-logo" />
         <prismic-rich-text :field="slice.primary.title" class="text-2xl tracking-wide" />
       </div>
-      <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">
+      <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="flex flex-wrap">
        <prismic-rich-text :field="item.activityName" class="list-decimal" /> 
       </div>
     </div>

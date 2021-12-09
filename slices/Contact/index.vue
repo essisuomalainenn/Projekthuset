@@ -8,20 +8,24 @@
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" class="mb-14" />
-    <div
-      v-for="(item, i) in slice.items"
-      :key="`slice-item-${i}`"
-      class="flex flex-wrap flex-row items-center mb-16"
-    >
-      <prismic-image :field="item.image" class="rounded-full w-52" />
-      <div class="text-container ml-8">
-        <prismic-rich-text :field="item.name" class="font-medium text-xl" />
-        <prismic-rich-text :field="item.jobTitle" class="font-medium" />
+    <div class="flex flex-wrap flex-row sm:justify-around">
+      <div
+        v-for="(item, i) in slice.items"
+        :key="`slice-item-${i}`"
+        class="flex flex-wrap flex-row items-center mb-16"
+      >
+        <prismic-image :field="item.image" class="rounded-full w-52" />
+        <div class="text-container ml-8">
+          <prismic-rich-text :field="item.name" class="font-medium text-xl" />
+          <prismic-rich-text :field="item.jobTitle" class="font-medium" />
 
-        <div class="contact-info-wrapper mt-10">
-          <prismic-rich-text :field="item.text" class="font-bold"/>
-          <prismic-rich-text :field="item.phoneNumber" />
-          <prismic-link :field="item.email">{{ item.email.url }}</prismic-link>
+          <div class="contact-info-wrapper mt-10">
+            <prismic-rich-text :field="item.text" class="font-bold" />
+            <prismic-rich-text :field="item.phoneNumber" />
+            <prismic-link :field="item.email">{{
+              item.email.url
+            }}</prismic-link>
+          </div>
         </div>
       </div>
     </div>
@@ -72,9 +76,7 @@ export default {
 }
 
 .contact-info-wrapper {
-
 }
-
 
 .text-container {
 }

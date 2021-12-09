@@ -14,10 +14,10 @@
       />
       <nav class="menu">
         <ul class="sm:text-6xl">
-          <li>Verksamheter</li>
-          <li>Projekt</li>
-          <li>Kontakt</li>
-          <li>Om projekthuset</li>
+          <li><nuxt-link to="activities">Verksamheter </nuxt-link></li>
+          <li><nuxt-link to="projects">Projekt</nuxt-link></li>
+          <li><nuxt-link to="contact">Kontakt</nuxt-link></li>
+          <li><nuxt-link to="about">Om projekthuset</nuxt-link></li>
         </ul>
       </nav>
     </div>
@@ -41,64 +41,10 @@ export default {
     toggleNav() {
       if (this.open) {
         this.open = false
-        console.log('open')
       } else {
         this.open = true
-        console.log('close')
       }
     },
-    /*   hideNav() {
-      this.open = false
-    },
-    showNav() {
-      this.open = true
-    }, */
-    /*   openAnimation() {
-      const gsap = this.$gsap
-      gsap.fromTo(
-        this.$refs.right,
-        {
-          yPercent: 110,
-        },
-        {
-          yPercent: 0,
-          duration: 0.9,
-          ease: 'power4.out',
-          stagger: 0.07,
-          onStart: this.showNav,
-        }
-      )
-      gsap.fromTo(
-        this.$refs.left,
-        {
-          yPercent: 110,
-        },
-        {
-          yPercent: 0,
-          duration: 0.9,
-          ease: 'power4.out',
-          stagger: 0.07,
-          delay: 0.07,
-        }
-      )
-    },
-    closeAnimation() {
-      const gsap = this.$gsap
-      gsap.to(this.$refs.left, {
-        yPercent: 100,
-        duration: 0.6,
-        ease: 'power4.out',
-        stagger: -0.07,
-      })
-      gsap.to(this.$refs.right, {
-        yPercent: 100,
-        duration: 0.6,
-        ease: 'power4.out',
-        stagger: -0.07,
-        delay: 0.07,
-        onComplete: this.hideNav,
-      })
-    }, */
   },
 }
 </script>
