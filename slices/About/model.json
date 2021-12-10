@@ -45,6 +45,13 @@
             "thumbnails": []
           },
           "type": "Image"
+        },
+        "navigationName": {
+          "config": {
+            "label": "navigationName",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {}

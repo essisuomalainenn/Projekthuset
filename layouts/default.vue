@@ -1,17 +1,19 @@
 <template>
   <div>
     <Nuxt />
-    <Header />
+    <Header/>
     <Footer v-if="!$fetchState.pending" :data="footer" />
   </div>
 </template>
 
 <script>
-
 export default {
-  components: { },
+   async middleware({ store, $prismic }) {
+    await store.dispatch('navigation/fetchMenu', $prismic)
+  },
   data: () => ({
     footer: {},
+    menu: {},
   }),
   async fetch() {
     this.footer = await this.$prismic.api

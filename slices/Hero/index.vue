@@ -8,12 +8,6 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <!--    <header class="site-header">
-        <div class="container">
-          <prismic-image :field="slice.primary.logo" class="logo" />
-          <prismic-image :field="slice.primary['menu-open']" class="menu" />
-        </div>
-      </header> -->
       <div class="header-text-container">
         <prismic-rich-text
           :field="slice.primary.title"
@@ -26,9 +20,8 @@
       </div>
     </div>
     <prismic-image :field="slice.primary.image" />
-    <!--  <pre>{{slice}}</pre>  -->
     <div class="container teasers">
-      <a href="#">
+      <a href="#item.text">
         <prismic-rich-text
           :field="slice.primary['about-text']"
           class="text-lg font-bolder m-8"

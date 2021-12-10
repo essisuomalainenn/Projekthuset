@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section :id="slice.primary.navigationName" class="section">
     <div class="about-title-container">
       <prismic-image :field="slice.primary.logo" class="about-logo" />
       <prismic-rich-text

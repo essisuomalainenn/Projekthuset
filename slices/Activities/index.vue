@@ -1,5 +1,5 @@
 <template>
-  <section
+  <section :id="slice.primary.navigationName" 
     class="section"
     :style="{
       'background-image':

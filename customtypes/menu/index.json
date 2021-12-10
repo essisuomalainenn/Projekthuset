@@ -7,16 +7,16 @@
     "Main": {
       "title": {
         "config": {
-          "label": "title",
+          "label": "Menu",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "single": "paragraph"
         },
         "type": "StructuredText"
       },
-      "menuItems": {
+      "menulinks": {
         "config": {
-          "label": "menuItems",
+          "label": "menu_links",
           "placeholder": "",
           "fields": {
             "linkLabel": {
@@ -24,18 +24,16 @@
                 "label": "linkLabel",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "single": "paragraph"
               },
               "type": "StructuredText"
             },
-            "linklabel": {
+            "sliceName": {
               "config": {
-                "label": "linklabel",
-                "placeholder": "",
-                "select": "web",
-                "allowTargetBlank": false
+                "label": "sliceName",
+                "placeholder": ""
               },
-              "type": "Link"
+              "type": "Text"
             }
           }
         },

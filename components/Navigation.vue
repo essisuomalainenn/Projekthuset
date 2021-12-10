@@ -12,12 +12,15 @@
         class="absolute inset-y-1 right-0 mt-3 menu-open"
         @click="toggleNav"
       />
-      <nav class="menu">
-        <ul class="sm:text-6xl">
-          <li><nuxt-link to="activities">Verksamheter </nuxt-link></li>
-          <li><nuxt-link to="projects">Projekt</nuxt-link></li>
-          <li><nuxt-link to="contact">Kontakt</nuxt-link></li>
-          <li><nuxt-link to="about">Om projekthuset</nuxt-link></li>
+      <nav class="text-white">
+        <ul>
+          <li
+            v-for="(item, index) in $store.state.navigation.menu.menulinks"
+            :key="'nav-item-' + index"
+            class="text-[6vw]"
+          >
+           <a :href="'#'+ item.sliceName">{{$prismic.asText(item.linkLabel)}}</a>
+          </li>
         </ul>
       </nav>
     </div>

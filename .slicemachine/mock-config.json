@@ -25,7 +25,33 @@
           }
         }
       }
-    }
+    },
+    "Project": {
+      "default-slice": {
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "Title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {}
+      }
+    },
+    "Contact": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "About": {},
+    "Footer": {}
   },
   "_cts": {
     "page": {},
@@ -39,6 +65,21 @@
       }
     },
     "header": {},
-    "menu": {}
+    "menu": {
+      "menulinks": {
+        "linkLabel": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

@@ -12,12 +12,19 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
         },
+        "Title": [
+          {
+            "type": "heading2",
+            "text": "Monetize scalable synergies",
+            "spans": []
+          }
+        ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Mollit deserunt velit non ex reprehenderit aliqua laboris nulla velit cillum est occaecat. Duis veniam aliquip sunt. Sunt magna labore Lorem aliqua.",
+            "text": "Pariatur aliquip minim anim et voluptate nostrud proident ad ex proident id qui eiusmod. Ut Lorem laboris est nisi eiusmod. Cupidatat eu consectetur proident non tempor consequat eiusmod.",
             "spans": []
           }
         ]
@@ -30,66 +37,19 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
         },
-        "description": [
+        "Title": [
           {
-            "type": "paragraph",
-            "text": "Anim ullamco culpa eu pariatur sunt irure adipisicing deserunt nostrud quis aute amet dolor. Enim et nisi ullamco ad nulla cillum ut proident eiusmod consectetur commodo nostrud laborum ad in. Eu adipisicing tempor laborum eu nostrud.",
+            "type": "heading2",
+            "text": "Implement open-source web services",
             "spans": []
           }
-        ]
-      },
-      {
-        "projectImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
-        },
+        ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Deserunt qui exercitation irure qui reprehenderit mollit non adipisicing ut nisi elit dolore velit est excepteur. Amet consequat duis laboris duis magna non irure Lorem velit non.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "projectImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
-        },
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Fugiat cupidatat commodo velit quis. Proident officia proident non officia sunt veniam dolore culpa occaecat occaecat.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "projectImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
-        },
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Ea deserunt exercitation qui adipisicing aliqua minim dolore cillum deserunt ipsum pariatur commodo qui occaecat. Consequat adipisicing est officia nulla proident amet magna labore sunt incididunt enim commodo.",
+            "text": "Est tempor est et laboris est cupidatat.",
             "spans": []
           }
         ]
@@ -99,7 +59,7 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Deploy e-business solutions",
+          "text": "Strategize sexy paradigms",
           "spans": []
         }
       ],
@@ -110,15 +70,16 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
       },
       "description": [
         {
           "type": "paragraph",
-          "text": "Dolor excepteur labore laborum ipsum.",
+          "text": "Velit exercitation deserunt minim sit magna et nostrud culpa ex laborum adipisicing occaecat. Laborum proident cillum aliqua officia minim do consectetur nulla id elit commodo ipsum sint culpa minim.",
           "spans": []
         }
-      ]
+      ],
+      "navigationName": "grow killer synergies"
     }
   }
 ]

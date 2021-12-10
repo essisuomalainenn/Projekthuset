@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section :id="slice.primary.navigationName" class="section">
     <div class="project-title-container">
       <prismic-image :field="slice.primary.logo" class="project-logo" />
       <prismic-rich-text
@@ -8,6 +8,11 @@
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" />
+    <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">
+      <prismic-image :field="item.projectImage" />
+      <prismic-rich-text :field="item.Title" />
+      <prismic-rich-text :field="item.description" />
+    </div>
   </section>
 </template>
 
@@ -56,5 +61,4 @@ export default {
 a {
   color: #111;
 }
-
 </style>

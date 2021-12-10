@@ -8,7 +8,7 @@
         "activityName": [
           {
             "type": "paragraph",
-            "text": "Tempor sunt adipisicing excepteur nisi aliquip laboris cupidatat proident Lorem. Pariatur dolore adipisicing culpa proident ipsum non proident pariatur eiusmod eu esse nisi. Sint tempor proident laboris ex.",
+            "text": "Officia et velit reprehenderit reprehenderit.",
             "spans": []
           }
         ]
@@ -17,7 +17,7 @@
         "activityName": [
           {
             "type": "paragraph",
-            "text": "Eiusmod irure cillum do minim magna nisi fugiat commodo non sint incididunt esse adipisicing ipsum laboris. Irure nulla velit ad reprehenderit dolore proident esse nisi quis.",
+            "text": "Occaecat quis consequat aliquip reprehenderit ad non nulla. Do et sit labore est pariatur duis veniam minim commodo et tempor dolor.",
             "spans": []
           }
         ]
@@ -26,7 +26,34 @@
         "activityName": [
           {
             "type": "paragraph",
-            "text": "Culpa nulla consectetur qui consectetur ex nostrud deserunt tempor ea quis magna labore proident. Sint reprehenderit enim laboris eiusmod enim qui qui quis. Exercitation aliquip labore qui veniam deserunt irure ut magna dolore in aliquip.",
+            "text": "Amet enim officia reprehenderit aute mollit pariatur minim ea excepteur. Proident excepteur duis officia qui reprehenderit tempor.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "activityName": [
+          {
+            "type": "paragraph",
+            "text": "Nostrud mollit aliqua Lorem ex ut enim et laborum ea. Do sit nostrud pariatur laboris magna esse. Incididunt deserunt consectetur duis sunt labore exercitation laboris magna anim est aute exercitation nostrud.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "activityName": [
+          {
+            "type": "paragraph",
+            "text": "Fugiat labore voluptate adipisicing fugiat exercitation minim pariatur eu occaecat. Reprehenderit tempor consequat excepteur sit. Ipsum adipisicing nostrud elit anim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "activityName": [
+          {
+            "type": "paragraph",
+            "text": "Laborum tempor nulla ipsum ut nulla pariatur do nulla laborum et esse Lorem.",
             "spans": []
           }
         ]
@@ -36,14 +63,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Grow B2C relationships",
+          "text": "Productize one-to-one platforms",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Fugiat dolor aliqua eu pariatur esse cillum sint excepteur. Tempor culpa qui culpa consectetur velit eu nisi. Cillum dolore sint consequat aliqua non sit enim sint amet deserunt voluptate excepteur excepteur mollit.",
+          "text": "Commodo consectetur amet tempor minim veniam ad anim aliqua ad do cupidatat. Incididunt irure sunt mollit fugiat ea dolore.",
           "spans": []
         }
       ],
@@ -54,7 +81,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
       },
       "image": {
         "dimensions": {
@@ -63,8 +90,9 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
-      }
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+      },
+      "navigationName": "transition intuitive architectures"
     }
   }
 ]

@@ -11,6 +11,9 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
+  "ProjectSlider": {
+    "description": "Auto imported from components/ProjectSlider.vue"
+  },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   }

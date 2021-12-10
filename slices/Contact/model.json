@@ -36,6 +36,13 @@
             "allowTargetBlank": true,
             "single": "paragraph"
           }
+        },
+        "navigationName": {
+          "config": {
+            "label": "navigationName",
+            "placeholder": "For navigation"
+          },
+          "type": "Text"
         }
       },
       "items": {

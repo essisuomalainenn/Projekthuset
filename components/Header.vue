@@ -15,16 +15,17 @@ import menuClosed from '~/assets/menuClosed.svg?inline'
 
 export default {
   components: { menuClosed },
-  methods: {
-    toggleNav() {
-      this.$refs.mainNav.toggleNav()
-    },
-    data() {
+  props: ['data'],
+  data() {
       return {
         isHidden: true,
       }
     },
-  },
+    methods: {
+    toggleNav() {
+      this.$refs.mainNav.toggleNav()
+    },
+    }
 }
 </script>
 
