@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed top-0 left-0 h-24 flex justify-between z-[1000] site-header"
+      class="fixed top-0 left-0 h-24 flex justify-between z-30 site-header"
     >
       <img src="@/assets/projekthuset_logo.png" alt="" class="h-16" />
       <menuClosed class="h-auto menu-closed" @click="toggleNav" />

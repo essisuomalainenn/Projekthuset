@@ -15,7 +15,7 @@
         class="flex flex-wrap flex-row items-center mb-16"
       >
         <prismic-image :field="item.image" class="rounded-full w-52" />
-        <div class="text-container ml-8">
+        <div class="text-container ml-0 md:ml-8">
           <prismic-rich-text :field="item.name" class="font-medium text-xl" />
           <prismic-rich-text :field="item.jobTitle" class="font-medium" />
 
@@ -68,7 +68,7 @@ export default {
 
 .contact-logo {
   width: 4rem;
-  background-color: #3e4040;
+  background-color: #c1353c;
   border-radius: 50%;
   padding: 0.5rem;
   margin-right: 1.5rem;

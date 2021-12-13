@@ -8,28 +8,31 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <div class="header-text-container">
+      <div class="header-text-container mt-44 md:mt-60">
         <prismic-rich-text
           :field="slice.primary.title"
-          class="text-3xl text-white title"
+          class="text-3xl md:text-5xl text-white title"
         />
         <prismic-rich-text
           :field="slice.primary.text"
-          class="text-sm text-white text font-lighter"
+          class="text-sm md:text-base text-white text font-light"
         />
       </div>
     </div>
     <prismic-image :field="slice.primary.image" />
-    <div class="container teasers">
-      <prismic-rich-text
-        :field="slice.primary['about-text']"
-        class="text-lg font-bolder m-8"
-      />
-      <div class="teaser-item-wrapper">
+    <div class="container teasers content-center">
+      <a :href="'#' + slice.primary.sliceName" class="about-link">
+        <prismic-rich-text
+          :field="slice.primary['about-text']"
+          class="text-lg font-bold sm:m-8"
+        />
+        <arrow class="arrow text-center hidden sm:block" />
+      </a>
+      <div class="teaser-item-wrapper m-4 sm:mt-24">
         <div
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
-          class="ikon"
+          class="ikon m-4 sm:m-8"
         >
           <a :href="'#' + item.sliceName">
             <prismic-image
@@ -45,7 +48,9 @@
 </template>
 
 <script>
+import arrow from '~/assets/arrow-down.svg?inline'
 export default {
+  components: { arrow },
   name: 'Hero',
   props: {
     slice: {
@@ -75,6 +80,13 @@ export default {
   display: block;
 }
 
+.about-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   filter: invert(100%);
   transition: all 0.25s ease;
@@ -82,6 +94,10 @@ export default {
   height: 3rem;
   max-width: 200px;
   display: block;
+}
+
+.test {
+  font-size: 2.5rem;
 }
 
 .overlay {
@@ -109,7 +125,6 @@ export default {
 }
 
 .header-text-container {
-  margin-top: 10rem;
   margin-bottom: 3rem;
 }
 
@@ -121,6 +136,7 @@ export default {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-self: center;
 }
 
 .container {
@@ -139,6 +155,7 @@ export default {
 .ikon {
   margin: 2rem;
 }
+
 .ikon-svg {
   fill: #cb333b;
   transition: all 0.25s ease-in-out;
@@ -153,10 +170,6 @@ export default {
   @apply hover:bg-red-500;
 }
 
-/* .ikon-svg:hover {
-  background-color: #cb333b;
-  fill: #e6e4d6;
-} */
 
 .title {
   font-family: Rubik, sans-serif;
@@ -168,18 +181,6 @@ export default {
   line-height: 1.66;
   text-align: center;
 }
-
-/* .ikon {
-  transition: all 0.25s ease-in-out;
-  background: #e6e4d6;
-  display: inline-block;
-  border-radius: 50%;
-  height: 9em;
-  width: 9em;
-  text-align: center;
-  margin-bottom: 8rem;
-  color: #cb333b;
-} */
 
 .teasers {
   display: flex;
