@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-hidden fixed inset-y-0 right-0 w-full h-full sm:w-1/2 z-[200]"
+    class="overflow-hidden fixed inset-y-0 right-0 w-full h-full sm:w-1/2 z-30"
     :class="[
       open ? 'opacity-1 pointer-events-auto' : 'opacity-0 pointer-events-none',
     ]"

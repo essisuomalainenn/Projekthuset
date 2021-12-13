@@ -72,6 +72,13 @@
             "single": "paragraph"
           },
           "type": "StructuredText"
+        },
+        "sliceName": {
+          "config": {
+            "label": "sliceName",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       }
     }

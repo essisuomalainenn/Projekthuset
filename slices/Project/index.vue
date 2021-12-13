@@ -8,11 +8,10 @@
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" />
-    <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">
-      <prismic-image :field="item.projectImage" />
-      <prismic-rich-text :field="item.Title" />
-      <prismic-rich-text :field="item.description" />
+    <div class="h-96 block w-full">
+       <ProjectSlider :items="slice.items" />
     </div>
+   
   </section>
 </template>
 
@@ -48,7 +47,6 @@ export default {
   align-items: center;
   margin-bottom: 1.5rem;
 }
-
 .project-logo {
   width: 4rem;
   background-color: #cb333b;
