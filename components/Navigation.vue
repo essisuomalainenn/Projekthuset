@@ -1,12 +1,12 @@
 <template>
   <div
-    class="overflow-hidden fixed inset-y-0 right-0 w-full h-full sm:w-1/2 z-30"
+    class="overflow-hidden fixed inset-y-0 right-0 w-full h-full sm:w-1/2 z-30 menu"
     :class="[
       open ? 'opacity-1 pointer-events-auto' : 'opacity-0 pointer-events-none',
     ]"
   >
     <div
-      class="w-full h-full p-14 absolute bg-black inset-y-0 right-0 z-50 flex items-center px-[6vw]"
+      class="w-full h-full p-14 absolute inset-y-0 right-0 z-50 flex items-center px-[6vw] menu"
     >
       <menuOpen
         class="absolute inset-y-1 right-0 mt-3 menu-open"
@@ -17,7 +17,7 @@
           <li
             v-for="(item, index) in $store.state.navigation.menu.menulinks"
             :key="'nav-item-' + index"
-            class="text-[6vw]"
+            class="text-[6vw] nav-link"
           >
            <a :href="'#'+ item.sliceName">{{$prismic.asText(item.linkLabel)}}</a>
           </li>
@@ -55,6 +55,11 @@ export default {
 <style scoped>
 .menu {
   color: white;
+  background-color: #101010;
+}
+
+.menu:hover {
+
 }
 
 li {
@@ -62,6 +67,9 @@ li {
   margin-bottom: 1rem;
 }
 
+.nav-link:hover {
+    color: #cb333b;
+}
 .menu-open {
   margin-right: 1rem;
   fill: white;

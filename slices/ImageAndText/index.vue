@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section"
+    class="section h-60 md:h-80"
     :style="{
       'background-image':
         'url(https://projekthuset.eu/app/uploads/2018/04/projekthuset-meeting.jpg)',
@@ -10,11 +10,11 @@
     <div class="container">
       <prismic-rich-text
         :field="slice.primary.text"
-        class="text-1xl text-white text font-bolder tracking-wide description"
+        class="text-1xl md:text-2xl text-white text font-bolder tracking-wide mb-16 md:mb-40 description"
       />
       <prismic-link
         :field="slice.primary.button"
-        class="bg-red-500 hover:bg-red-700 mt-8 link"
+        class="bg-red-500 hover:bg-red-700 mt-8 md:mt-16 link"
         >Kontakta oss</prismic-link
       >
     </div>
@@ -43,9 +43,9 @@ export default {
   box-sizing: inherit;
   background-size: cover;
   background-position: center;
+  padding-bottom: 3rem;
   text-align: center;
   width: 100%;
-  height: 15rem;
   display: flex;
   align-content: center;
   justify-content: flex-start;
@@ -70,7 +70,6 @@ export default {
   overflow: hidden;
   font-weight: 700;
   border: 0;
-  margin-top: 6rem;
 }
 
 .overlay {
@@ -84,7 +83,6 @@ export default {
 
 .description {
   z-index: 10;
-  margin-bottom: 4.2rem;
 }
 
 a {

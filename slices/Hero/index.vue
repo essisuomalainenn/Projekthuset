@@ -36,7 +36,7 @@
         >
           <a :href="'#' + item.sliceName">
             <prismic-image
-              class="ikon-svg shadow-xl fill-current text-white leading-7"
+              class="ikon-svg shadow-xl w-32 sm:w-40 fill-current text-white leading-7"
               :field="item.image"
             />
             <prismic-rich-text :field="item.text" />
@@ -162,8 +162,6 @@ export default {
   background-color: #e6e4d6;
   display: inline-block;
   border-radius: 50%;
-  height: 8em;
-  width: 8em;
   text-align: center;
   margin-bottom: 1.5rem;
 

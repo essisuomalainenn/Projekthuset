@@ -18,6 +18,7 @@
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/vue": "^6.3.12",
     "core-js": "^3.15.1",
+    "gsap": "^3.8.0",
     "nuxt": "^2.15.7",
     "nuxt-sm": "^0.0.9",
     "swiper": "^5.4.5",
