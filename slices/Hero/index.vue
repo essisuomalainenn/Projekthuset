@@ -21,23 +21,23 @@
     </div>
     <prismic-image :field="slice.primary.image" />
     <div class="container teasers">
-      <a href="#item.text">
-        <prismic-rich-text
-          :field="slice.primary['about-text']"
-          class="text-lg font-bolder m-8"
-        />
-      </a>
+      <prismic-rich-text
+        :field="slice.primary['about-text']"
+        class="text-lg font-bolder m-8"
+      />
       <div class="teaser-item-wrapper">
         <div
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
           class="ikon"
         >
-          <prismic-image
-            class="ikon-svg shadow-xl fill-current text-white leading-7"
-            :field="item.image"
-          />
-          <prismic-rich-text :field="item.text" />
+          <a :href="'#' + item.sliceName">
+            <prismic-image
+              class="ikon-svg shadow-xl fill-current text-white leading-7"
+              :field="item.image"
+            />
+            <prismic-rich-text :field="item.text" />
+          </a>
         </div>
       </div>
     </div>
