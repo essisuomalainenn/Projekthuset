@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-auto">
     <Nuxt />
     <Header/>
     <Footer v-if="!$fetchState.pending" :data="footer" />
@@ -25,4 +25,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+</style>

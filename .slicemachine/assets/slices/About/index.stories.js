@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"about","items":[],"primary":{"about-title":[{"type":"heading2","text":"Deploy e-business relationships","spans":[]}],"text":[{"type":"paragraph","text":"Nulla laboris nulla non occaecat non sunt do ipsum laboris pariatur cillum. Amet non ipsum fugiat voluptate adipisicing.","spans":[]}],"Verksamheter":{"link_type":"Web","url":"http://google.com"},"logo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"},"navigationName":"integrate vertical solutions"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"about","items":[],"primary":{"about-title":[{"type":"heading2","text":"Whiteboard vertical e-services","spans":[]}],"text":[{"type":"paragraph","text":"Reprehenderit officia dolore laboris eiusmod veniam do cillum magna sunt exercitation adipisicing nisi occaecat.","spans":[]}],"Verksamheter":{"link_type":"Web","url":"https://slicemachine.dev"},"logo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"},"navigationName":"brand magnetic mindshare","sliceName":"incentivize frictionless partnerships"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

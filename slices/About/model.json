@@ -52,6 +52,13 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "sliceName": {
+          "config": {
+            "label": "sliceName",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {}

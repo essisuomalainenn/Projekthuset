@@ -64,9 +64,17 @@ export default {
     // This is a bug with `getStoriesPaths` and Nuxt that is awaiting to be fixed
     stories: [...getStoriesPaths().map(path => path.replace("../", "~/"))]
   },
+
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+      scrollTo: true,
+    },
+  },
+
   // This is a bug with `getStoriesPaths` and Nuxt that is awaiting to be fixed
   ignore: [...getStoriesPaths().map(path => path.replace("../", "~/"))],
   generate: {
     fallback: '404.html' // Netlify reads a 404.html, Nuxt will load as an SPA
-  }
+  },
 }

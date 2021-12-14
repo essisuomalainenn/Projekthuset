@@ -28,12 +28,17 @@
           </div>
         </div>
       </div>
+      <houseSvg class="houseSvg" />
     </div>
   </section>
 </template>
 
 <script>
+import houseSvg from '~/assets/hus.svg?inline'
 export default {
+  components: {
+    houseSvg,
+  },
   name: 'Contact',
   props: {
     slice: {
@@ -75,10 +80,15 @@ export default {
   fill: white;
 }
 
-.contact-info-wrapper {
-}
-
-.text-container {
+.houseSvg {
+  width: 40rem;
+  float: right;
+  position: absolute;
+  top: -5rem;
+  fill: #c1353c;
+  right: -20rem;
+  bottom: 3rem;
+  z-index: -99;
 }
 
 a {

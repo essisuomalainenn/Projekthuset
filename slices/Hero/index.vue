@@ -8,11 +8,18 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <div class="header-text-container mt-44 md:mt-60">
-        <prismic-rich-text
-          :field="slice.primary.title"
-          class="text-3xl md:text-5xl text-white title"
-        />
+      <div class="header-text-container mt-44 lg:mt-48">
+        <transition
+          appear
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @after-enter="afterEnter"
+        >
+          <prismic-rich-text
+            :field="slice.primary.title"
+            class="text-3xl md:text-5xl text-white title"
+          />
+        </transition>
         <prismic-rich-text
           :field="slice.primary.text"
           class="text-sm md:text-base text-white text font-light"
@@ -24,15 +31,22 @@
       <a :href="'#' + slice.primary.sliceName" class="about-link">
         <prismic-rich-text
           :field="slice.primary['about-text']"
-          class="text-lg font-bold sm:m-8"
+          class="text-lg font-bold m-4 xl:m-8"
         />
-        <arrow class="arrow text-center hidden sm:block" />
+        <arrow class="arrow text-center hidden sm:block"/>
       </a>
-      <div class="teaser-item-wrapper m-4 sm:mt-24">
+      <transition-group
+        class="teaser-item-wrapper m-4 xl:mt-24"
+        appear
+        tag="div"
+        @before-enter="itemsBeforeEnter"
+        @enter="itemsEnter"
+      >
         <div
           v-for="(item, i) in slice.items"
+          :data-i="i"
           :key="`slice-item-${i}`"
-          class="ikon m-4 sm:m-8"
+          class="ikon m-4 md:m-8"
         >
           <a :href="'#' + item.sliceName">
             <prismic-image
@@ -42,13 +56,15 @@
             <prismic-rich-text :field="item.text" />
           </a>
         </div>
-      </div>
+      </transition-group>
     </div>
   </section>
 </template>
 
 <script>
+import { gsap } from 'gsap'
 import arrow from '~/assets/arrow-down.svg?inline'
+
 export default {
   components: { arrow },
   name: 'Hero',
@@ -61,12 +77,47 @@ export default {
       },
     },
   },
+  data() {
+    const beforeEnter = (el) => {
+      console.log('before enter')
+      el.style.transform = 'translateY(-60px)'
+      el.style.opacity = 0
+    }
+    const enter = (el, done) => {
+      console.log('make transition')
+      gsap.to(el, {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'bounce.out',
+        onComplete: done,
+      })
+    }
+    const afterEnter = () => {
+      console.log('afterenter')
+    }
+    const itemsBeforeEnter = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateY(100px)'
+    }
+
+    const itemsEnter = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        onComplete: done,
+        delay: el.dataset.i * 0.2,
+      })
+    }
+    return { beforeEnter, enter, afterEnter, itemsBeforeEnter, itemsEnter }
+  },
 }
 </script>
 <style scoped>
 .section {
-  height: 100vh;
   width: 100%;
+  height: auto;
   background-repeat: no-repeat;
   box-sizing: inherit;
   background-size: cover;
@@ -80,6 +131,9 @@ export default {
   display: block;
 }
 
+.arrow:hover {
+transform: scale(1.2);
+}
 .about-link {
   display: flex;
   flex-direction: column;
@@ -105,6 +159,8 @@ export default {
   top: 0;
   bottom: 0;
   left: 0;
+  height: 100%;
+  overflow: auto;
   right: 0;
   background-color: rgba(62, 64, 64, 0.7);
 }
@@ -167,7 +223,6 @@ export default {
 
   @apply hover:bg-red-500;
 }
-
 
 .title {
   font-family: Rubik, sans-serif;

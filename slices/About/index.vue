@@ -7,10 +7,13 @@
         class="text-2xl tracking-wide"
       />
     </div>
-
-    <prismic-rich-text :field="slice.primary.text" class="mb-8" />
-    <prismic-link :field="slice.primary.Verksamheter" class=" bg-red-500 hover:bg-red-700 link"
-      >Verksamheter</prismic-link
+    <a :href="'#' + slice.primary.sliceName">
+      <prismic-rich-text :field="slice.primary.text" class="mb-8" />
+      <prismic-link
+        :field="slice.primary.Verksamheter"
+        class="bg-red-500 hover:bg-red-700 link"
+        >Verksamheter</prismic-link
+      ></a
     >
   </section>
 </template>
@@ -64,7 +67,6 @@ a {
   margin-right: 1.5rem;
   fill: white;
 }
-
 
 .link {
   color: #e6e4d6;
