@@ -11,7 +11,7 @@
         class="swiper-slide h-72"
       >
         <prismic-image :field="item.projectImage" class="project-image" />
-        <prismic-rich-text :field="item.Title" class="text-lg bolder p-2 bg-gray-500 text-center text-white w-auto" />
+        <prismic-rich-text :field="item.Title" class="text-lg bolder p-2 bg-black text-center text-white w-auto" />
       </div>
     </div>
     <div class="swiper-button-prev" slot="button-prev"></div>
@@ -79,6 +79,6 @@ export default {
 }
 .project-image {
   height: 18rem;
-  width: auto;
+  width: 100%;
 }
 </style>

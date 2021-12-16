@@ -14,9 +14,11 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_3e00a38e from 'nuxt_plugin_plugin_3e00a38e' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_vuescrollto_57b331e5 from 'nuxt_plugin_vuescrollto_57b331e5' // Source: ./vue-scrollto.js (mode: 'client')
 import nuxt_plugin_smresolver_4232ee55 from 'nuxt_plugin_smresolver_4232ee55' // Source: ./prismic/sm-resolver.js (mode: 'all')
 import nuxt_plugin_prismic_4272693c from 'nuxt_plugin_prismic_4272693c' // Source: ./prismic/plugins/prismic.js (mode: 'all')
 import nuxt_plugin_prismiccomponents_667535c9 from 'nuxt_plugin_prismiccomponents_667535c9' // Source: ./prismic/plugins/prismic-components.js (mode: 'all')
+import nuxt_plugin_gsapModule_48c8002d from 'nuxt_plugin_gsapModule_48c8002d' // Source: ./gsapModule.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_0f4ed586 from 'nuxt_plugin_vueawesomeswiper_0f4ed586' // Source: ../plugins/vue-awesome-swiper (mode: 'client')
 
 // Component: <ClientOnly>
@@ -215,6 +217,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_3e00a38e(app.context, inject)
   }
 
+  if (process.client && typeof nuxt_plugin_vuescrollto_57b331e5 === 'function') {
+    await nuxt_plugin_vuescrollto_57b331e5(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_smresolver_4232ee55 === 'function') {
     await nuxt_plugin_smresolver_4232ee55(app.context, inject)
   }
@@ -225,6 +231,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_prismiccomponents_667535c9 === 'function') {
     await nuxt_plugin_prismiccomponents_667535c9(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_gsapModule_48c8002d === 'function') {
+    await nuxt_plugin_gsapModule_48c8002d(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vueawesomeswiper_0f4ed586 === 'function') {

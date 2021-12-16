@@ -1,5 +1,6 @@
 <template>
   <section
+  id="home"
     class="section"
     :style="{
       'background-image':
@@ -9,12 +10,7 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="header-text-container mt-44 lg:mt-48">
-        <transition
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-          @after-enter="afterEnter"
-        >
+        <transition>
           <prismic-rich-text
             :field="slice.primary.title"
             class="text-3xl md:text-5xl text-white title"
@@ -28,15 +24,15 @@
     </div>
     <prismic-image :field="slice.primary.image" />
     <div class="container teasers content-center">
-      <a :href="'#' + slice.primary.sliceName" class="about-link">
+      <a v-scroll-to="'#' + slice.primary.sliceName" :href="'#' + slice.primary.sliceName" class="about-link">
         <prismic-rich-text
           :field="slice.primary['about-text']"
           class="text-lg font-bold m-4 xl:m-8"
         />
-        <arrow class="arrow text-center hidden sm:block"/>
+        <arrow class="arrow text-center hidden sm:block" />
       </a>
       <transition-group
-        class="teaser-item-wrapper m-4 xl:mt-24"
+        class="teaser-item-wrapper xl:mt-24"
         appear
         tag="div"
         @before-enter="itemsBeforeEnter"
@@ -48,12 +44,12 @@
           :key="`slice-item-${i}`"
           class="ikon m-4 md:m-8"
         >
-          <a :href="'#' + item.sliceName">
+          <a v-scroll-to="'#' + item.sliceName" :href="'#' + item.sliceName">
             <prismic-image
               class="ikon-svg shadow-xl w-32 sm:w-40 fill-current text-white leading-7"
               :field="item.image"
             />
-            <prismic-rich-text :field="item.text" />
+            <prismic-rich-text :field="item.text" class="text-xl" />
           </a>
         </div>
       </transition-group>
@@ -79,12 +75,10 @@ export default {
   },
   data() {
     const beforeEnter = (el) => {
-      console.log('before enter')
       el.style.transform = 'translateY(-60px)'
       el.style.opacity = 0
     }
     const enter = (el, done) => {
-      console.log('make transition')
       gsap.to(el, {
         duration: 1,
         y: 0,
@@ -93,9 +87,7 @@ export default {
         onComplete: done,
       })
     }
-    const afterEnter = () => {
-      console.log('afterenter')
-    }
+    const afterEnter = () => {}
     const itemsBeforeEnter = (el) => {
       el.style.opacity = 0
       el.style.transform = 'translateY(100px)'
@@ -112,11 +104,15 @@ export default {
     }
     return { beforeEnter, enter, afterEnter, itemsBeforeEnter, itemsEnter }
   },
+  methods: {
+    init() {},
+  },
 }
 </script>
 <style scoped>
 .section {
   width: 100%;
+  background: black;
   height: auto;
   background-repeat: no-repeat;
   box-sizing: inherit;
@@ -132,7 +128,7 @@ export default {
 }
 
 .arrow:hover {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .about-link {
   display: flex;
@@ -158,8 +154,8 @@ transform: scale(1.2);
   position: absolute;
   top: 0;
   bottom: 0;
+  height: auto;
   left: 0;
-  height: 100%;
   overflow: auto;
   right: 0;
   background-color: rgba(62, 64, 64, 0.7);

@@ -1,9 +1,19 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './slices/**/*.vue',
+    './components/**/*.vue',
+    './layouts/**/*.vue'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '100': '100px',
+        '80': '80rem',
+      }
+    },
   },
+  mode: 'jit',
   listStyleType: {
    disc: 'disc',
   },

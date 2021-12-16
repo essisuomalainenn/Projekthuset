@@ -9,6 +9,7 @@
   >
     <div class="red-overlay"></div>
     <div class="container">
+      <rulerSvg class="ruler hidden md:block xl:ruler-big" ref="activity"/>
       <div class="activities-title-container">
         <prismic-image :field="slice.primary.logo" class="activity-logo" />
         <prismic-rich-text
@@ -16,16 +17,15 @@
           class="text-2xl tracking-wide"
         />
       </div>
-      <div class="">
-        <div
-          v-for="(item, i) in slice.items"
+      <div class="sm:grid grid-cols-2 gap-4 w-fit pb-4" ref="activity">
+        <ul
+          v-for="(item, i) in slice.primary.activitiesContent"
+          :data-i="i"
           :key="`slice-item-${i}`"
-          class="flex flex-wrap"
         >
-          <prismic-rich-text :field="item.activityName" class="list-decimal" />
-        </div>
+          <li class="mb-2">{{ item.text }}</li>
+        </ul>
       </div>
-      <rulerSvg class="ruler hidden md:block" />
     </div>
   </section>
 </template>
@@ -44,6 +44,25 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+     mounted() {
+    this.animateOnScroll()
+  },
+  methods: {
+    animateOnScroll() {
+      this.$gsap.from(this.$refs.activity, {
+       y: 50,
+        autoAlpha: 0,
+        ease: 'Power1.easeInOut',
+        duration: 1.7,
+        scrollTrigger: {
+          trigger: this.$refs.activity,
+          start: 'top 100%',
+          end: 'top 50%',
+          scrub: 1,
+        },
+      })
     },
   },
 }
@@ -67,12 +86,22 @@ export default {
 
 .ruler {
   width: 35vw;
-  right: 5rem;
-  
-  fill: white;
-  float: right;
-  margin-right: 5rem;
-  margin-bottom: -4.5rem;
+  position: absolute;
+  fill: #e8e7da;
+  right: 0;
+  bottom: -7rem;
+}
+
+.ruler-big {
+  bottom: -10rem;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  gap: 10px 20px;
+  width: 70%;
+  align-content: space-between;
 }
 
 .red-overlay {
@@ -83,13 +112,17 @@ export default {
   bottom: 0;
   top: 0;
 }
-
+ul li {
+  list-style: disc;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
 .container {
   position: relative;
   clear: both;
   margin-top: 1rem;
   overflow: hidden;
-  max-width: 80rem;
+  max-width: 100%;
   margin-left: 0;
   margin-right: auto;
   text-align: left;

@@ -8,10 +8,9 @@
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" />
-    <div class="h-96 block w-full">
-       <ProjectSlider :items="slice.items" />
+    <div class="h-96 block w-full" ref="projects">
+      <ProjectSlider :items="slice.items" />
     </div>
-   
   </section>
 </template>
 
@@ -25,6 +24,25 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+  mounted() {
+    this.animateOnScroll()
+  },
+  methods: {
+    animateOnScroll() {
+      this.$gsap.from(this.$refs.projects, {
+        y: 50,
+        autoAlpha: 0,
+        ease: 'Power1.easeInOut',
+        duration: 1.7,
+        scrollTrigger: {
+          trigger: this.$refs.projects,
+          start: 'top 100%',
+          end: 'top 50%',
+          scrub: 1,
+        },
+      })
     },
   },
 }

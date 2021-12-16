@@ -9,13 +9,13 @@
     </div>
     <prismic-rich-text :field="slice.primary.description" class="mb-14" />
     <div class="flex flex-wrap flex-row sm:justify-around">
-      <div
+      <div ref="contact"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         class="flex flex-wrap flex-row items-center mb-16"
       >
         <prismic-image :field="item.image" class="rounded-full w-52" />
-        <div class="text-container ml-0 md:ml-8">
+        <div class="text-container ml-2 mt-4 md:ml-8">
           <prismic-rich-text :field="item.name" class="font-medium text-xl" />
           <prismic-rich-text :field="item.jobTitle" class="font-medium" />
 
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <houseSvg class="houseSvg" />
+      <houseSvg class="houseSvg hidden md:block" />
     </div>
   </section>
 </template>
@@ -49,6 +49,25 @@ export default {
       },
     },
   },
+    mounted() {
+    this.animateOnScroll()
+  },
+  methods: {
+    animateOnScroll() {
+      this.$gsap.from(this.$refs.contact, {
+        y: 50,
+        autoAlpha: 0,
+        ease: 'Power1.easeInOut',
+        duration: 1.7,
+        scrollTrigger: {
+          trigger: this.$refs.contact,
+          start: 'top 100%',
+          end: 'top 50%',
+          scrub: 1,
+        },
+      })
+    },
+  },
 }
 </script>
 
@@ -61,6 +80,7 @@ export default {
   padding: 1rem;
   text-align: left;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
 
 .contact-title-container {
@@ -86,7 +106,7 @@ export default {
   position: absolute;
   top: -5rem;
   fill: #c1353c;
-  right: -20rem;
+  margin-right: -100vw;
   bottom: 3rem;
   z-index: -99;
 }

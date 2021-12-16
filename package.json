@@ -22,7 +22,9 @@
     "nuxt": "^2.15.7",
     "nuxt-sm": "^0.0.9",
     "swiper": "^5.4.5",
+    "tailwindcss": "^2.2.16",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-scrollto": "^2.20.0",
     "vue-slicezone": "^0.1.0"
   },
   "devDependencies": {
@@ -35,6 +37,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
+    "nuxt-gsap-module": "^1.5.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
     "slice-machine-ui": "^0.1.2"

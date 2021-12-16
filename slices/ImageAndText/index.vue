@@ -8,16 +8,19 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <prismic-rich-text
-        :field="slice.primary.text"
-        class="text-1xl md:text-2xl text-white text font-bolder tracking-wide mb-16 md:mb-40 description"
-      />
-      <prismic-link
-        :field="slice.primary.button"
-        class="bg-red-500 hover:bg-red-700 mt-8 md:mt-16 link"
-        >Kontakta oss</prismic-link
-      >
+      <div ref="text">
+        <prismic-rich-text
+          :field="slice.primary.text"
+          class="text-1xl md:text-2xl text-white text font-bolder tracking-wide mb-16 md:mb-40 description"
+        />
+      </div>
     </div>
+    <a
+      :href="'#' + slice.primary.sliceName"
+      class="bg-red-500 hover:bg-red-700 link"
+    >
+      Kontakta oss</a
+    >
   </section>
 </template>
 
@@ -33,6 +36,25 @@ export default {
       },
     },
   },
+  mounted() {
+    this.animateOnScroll()
+  },
+  methods: {
+    animateOnScroll() {
+      this.$gsap.from(this.$refs.text, {
+        y: 50,
+        autoAlpha: 0,
+        ease: 'Power1.easeInOut',
+        duration: 1.7,
+        scrollTrigger: {
+          trigger: this.$refs.text,
+          start: 'top 100%',
+          end: 'top 50%',
+          scrub: 1,
+        },
+      })
+    },
+  },
 }
 </script>
 
@@ -41,12 +63,15 @@ export default {
   position: relative;
   background-repeat: no-repeat;
   box-sizing: inherit;
+  max-height: 20rem;
   background-size: cover;
   background-position: center;
   padding-bottom: 3rem;
   text-align: center;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
   align-content: center;
   justify-content: flex-start;
 }
@@ -57,7 +82,6 @@ export default {
   margin-top: 2rem;
   overflow: hidden;
   max-width: 80rem;
-  padding: 1rem;
   text-align: left;
 }
 
@@ -66,6 +90,8 @@ export default {
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 0.5em;
+  width: fit-content;
+  z-index: 10;
   padding: 0.7em 1.3em;
   overflow: hidden;
   font-weight: 700;

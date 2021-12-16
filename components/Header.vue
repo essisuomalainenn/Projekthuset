@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="fixed top-0 left-0 h-24 flex justify-between z-30 site-header">
-      <img src="@/assets/projekthuset_logo.png" alt="" class="h-16" />
+      <a v-scroll-to="'#home'" href="#home"><img src="@/assets/projekthuset_logo.png" alt="" class="h-16" /></a>
 
       <button @click="open = !open" class="z-40 text-white relative w-12 h-12">
    

@@ -1,14 +1,14 @@
 <template>
   <div class="overflow-auto">
     <Nuxt />
-    <Header/>
+    <Header />
     <Footer v-if="!$fetchState.pending" :data="footer" />
   </div>
 </template>
 
 <script>
 export default {
-   async middleware({ store, $prismic }) {
+  async middleware({ store, $prismic }) {
     await store.dispatch('navigation/fetchMenu', $prismic)
   },
   data: () => ({
@@ -26,5 +26,10 @@ export default {
 </script>
 
 <style>
-
+.rich-text ul li{
+ @apply list-decimal;
+}
+section, .overlay {
+    overflow-y: hidden;
+}
 </style>

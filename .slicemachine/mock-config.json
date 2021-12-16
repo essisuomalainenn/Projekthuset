@@ -22,6 +22,12 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "activitiesContent": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }
@@ -52,7 +58,8 @@
     },
     "About": {},
     "Footer": {},
-    "Hero": {}
+    "Hero": {},
+    "ImageAndText": {}
   },
   "_cts": {
     "page": {},

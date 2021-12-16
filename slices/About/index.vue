@@ -7,13 +7,12 @@
         class="text-2xl tracking-wide"
       />
     </div>
-    <a :href="'#' + slice.primary.sliceName">
+
+    <div ref="about">
       <prismic-rich-text :field="slice.primary.text" class="mb-8" />
-      <prismic-link
-        :field="slice.primary.Verksamheter"
-        class="bg-red-500 hover:bg-red-700 link"
-        >Verksamheter</prismic-link
-      ></a
+    </div>
+    <a :href="'#' + slice.primary.sliceName" class="bg-red-500 hover:bg-red-700 link">
+     Verksamheter</a
     >
   </section>
 </template>
@@ -28,6 +27,25 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+  mounted() {
+    this.animateOnScroll()
+  },
+  methods: {
+    animateOnScroll() {
+      this.$gsap.from(this.$refs.about, {
+        y: 50,
+        autoAlpha: 0,
+        ease: 'Power1.easeInOut',
+        duration: 1.7,
+        scrollTrigger: {
+          trigger: this.$refs.about,
+          start: 'top 100%',
+          end: 'top 50%',
+          scrub: 1,
+        },
+      })
     },
   },
 }

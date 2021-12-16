@@ -12,7 +12,7 @@
               :key="'nav-item-' + index"
               class="text-[6vw] nav-link"
             >
-              <a :href="'#' + item.sliceName">{{
+              <a v-scroll-to="'#' + item.sliceName" :href="'#' + item.sliceName">{{
                 $prismic.asText(item.linkLabel)
               }}</a>
             </li>
