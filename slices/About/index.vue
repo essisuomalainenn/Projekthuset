@@ -11,7 +11,7 @@
     <div ref="about">
       <prismic-rich-text :field="slice.primary.text" class="mb-8" />
     </div>
-    <a :href="'#' + slice.primary.sliceName" class="bg-red-500 hover:bg-red-700 link">
+    <a  v-scroll-to="'#' + slice.primary.sliceName" :href="'#' + slice.primary.sliceName" class="bg-red-500 hover:bg-red-700 link">
      Verksamheter</a
     >
   </section>
