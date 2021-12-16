@@ -15,7 +15,8 @@
         />
       </div>
     </div>
-    <a v-scroll-to="'#' + slice.primary.sliceName"
+    <a
+      v-scroll-to="'#' + slice.primary.sliceName"
       :href="'#' + slice.primary.sliceName"
       class="bg-red-500 hover:bg-red-700 link"
     >

@@ -42,9 +42,6 @@ export default {
   background-color: #101010;
 }
 
-.menu:hover {
-}
-
 li {
   font-size: 2.5rem;
   margin-bottom: 1rem;

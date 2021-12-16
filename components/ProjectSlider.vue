@@ -14,8 +14,8 @@
         <prismic-rich-text :field="item.Title" class="text-lg bolder p-2 bg-black text-center text-white w-auto" />
       </div>
     </div>
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
+    <div  slot="button-prev" class="swiper-button-prev"></div>
+    <div slot="button-next" class="swiper-button-next"></div>
   </div>
 </template>
 

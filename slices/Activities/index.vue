@@ -9,7 +9,7 @@
   >
     <div class="red-overlay"></div>
     <div class="container">
-      <rulerSvg class="ruler hidden md:block xl:ruler-big" ref="activity"/>
+      <rulerSvg ref="activity" class="ruler hidden md:block xl:ruler-big"/>
       <div class="activities-title-container">
         <prismic-image :field="slice.primary.logo" class="activity-logo" />
         <prismic-rich-text
@@ -17,11 +17,11 @@
           class="text-2xl tracking-wide"
         />
       </div>
-      <div class="sm:grid grid-cols-2 gap-4 w-fit pb-4" ref="activity">
+      <div ref="activity" class="sm:grid grid-cols-2 gap-4 w-fit pb-4">
         <ul
           v-for="(item, i) in slice.primary.activitiesContent"
-          :data-i="i"
           :key="`slice-item-${i}`"
+          :data-i="i"
         >
           <li class="mb-2">{{ item.text }}</li>
         </ul>
@@ -33,10 +33,10 @@
 <script>
 import rulerSvg from '~/assets/linjalstreck.svg?inline'
 export default {
+  name: 'Activities',
   components: {
     rulerSvg,
   },
-  name: 'Activities',
   props: {
     slice: {
       type: Object,

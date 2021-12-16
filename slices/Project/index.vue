@@ -8,7 +8,7 @@
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" />
-    <div class="h-96 block w-full" ref="projects">
+    <div ref="projects" class="h-96 block w-full">
       <ProjectSlider :items="slice.items" />
     </div>
   </section>

@@ -7,12 +7,15 @@
         class="text-2xl tracking-wide"
       />
     </div>
-
     <div ref="about">
       <prismic-rich-text :field="slice.primary.text" class="mb-8" />
     </div>
-    <a  v-scroll-to="'#' + slice.primary.sliceName" :href="'#' + slice.primary.sliceName" class="bg-red-500 hover:bg-red-700 link">
-     Verksamheter</a
+    <a
+      v-scroll-to="'#' + slice.primary.sliceName"
+      :href="'#' + slice.primary.sliceName"
+      class="bg-red-500 hover:bg-red-700 link"
+    >
+      Verksamheter</a
     >
   </section>
 </template>

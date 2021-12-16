@@ -1,6 +1,6 @@
 <template>
   <section
-  id="home"
+    id="home"
     class="section"
     :style="{
       'background-image':
@@ -24,7 +24,11 @@
     </div>
     <prismic-image :field="slice.primary.image" />
     <div class="container teasers content-center">
-      <a v-scroll-to="'#' + slice.primary.sliceName" :href="'#' + slice.primary.sliceName" class="about-link">
+      <a
+        v-scroll-to="'#' + slice.primary.sliceName"
+        :href="'#' + slice.primary.sliceName"
+        class="about-link"
+      >
         <prismic-rich-text
           :field="slice.primary['about-text']"
           class="text-lg font-bold m-4 xl:m-8"
@@ -40,8 +44,8 @@
       >
         <div
           v-for="(item, i) in slice.items"
-          :data-i="i"
           :key="`slice-item-${i}`"
+          :data-i="i"
           class="ikon m-4 md:m-8"
         >
           <a v-scroll-to="'#' + item.sliceName" :href="'#' + item.sliceName">
@@ -62,8 +66,8 @@ import { gsap } from 'gsap'
 import arrow from '~/assets/arrow-down.svg?inline'
 
 export default {
-  components: { arrow },
   name: 'Hero',
+  components: { arrow },
   props: {
     slice: {
       type: Object,

@@ -9,8 +9,8 @@
     </div>
     <prismic-rich-text :field="slice.primary.description" class="mb-14" />
     <div class="flex flex-wrap flex-row sm:justify-around">
-      <div ref="contact"
-        v-for="(item, i) in slice.items"
+      <div v-for="(item, i) in slice.items"
+      ref="contact"
         :key="`slice-item-${i}`"
         class="flex flex-wrap flex-row items-center mb-16"
       >
@@ -34,10 +34,10 @@
 <script>
 import houseSvg from '~/assets/hus.svg?inline'
 export default {
+   name: 'Contact',
   components: {
     houseSvg,
   },
-  name: 'Contact',
   props: {
     slice: {
       type: Object,
