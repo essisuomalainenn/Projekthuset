@@ -15,7 +15,7 @@
         alt="European Union Logo"
         class="ml-4 h-24"
       />
-      <div class="credits-container flex pt-8">
+      <div class="credits-container flex pt-8 lg:absolute lg:mt-40">
         <prismic-rich-text :field="data.data.creditsText" class="pl-4" />
         <a href="https://wilsoncreative.se/">&nbsp; Wilson Creative</a>
       </div>

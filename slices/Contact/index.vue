@@ -22,9 +22,7 @@
           <div class="contact-info-wrapper mt-10">
             <prismic-rich-text :field="item.text" class="font-bold" />
             <prismic-rich-text :field="item.phoneNumber" />
-            <prismic-link :field="item.email">{{
-              item.email.url
-            }}</prismic-link>
+           <a :href="'mailto:'+ item.email">{{ item.email }}</a>
           </div>
         </div>
       </div>

@@ -53,7 +53,8 @@
     },
     "Contact": {
       "default-slice": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "About": {},

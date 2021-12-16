@@ -93,11 +93,9 @@
         "email": {
           "config": {
             "label": "email",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "placeholder": ""
           },
-          "type": "Link"
+          "type": "Text"
         }
       }
     }
