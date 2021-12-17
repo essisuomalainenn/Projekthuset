@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="section"
+    class="section h-[163vh] sm:h-[100vh]"
     :style="{
       'background-image':
         'url(https://projekthuset.eu/app/uploads/2018/03/alexander-pemberton-95212-unsplash-1800x1200.jpg)',
@@ -9,11 +9,11 @@
   >
     <div class="overlay"></div>
     <div class="container">
-      <div class="header-text-container mt-44 lg:mt-48">
+      <div class="header-text-container mt-44">
         <transition>
           <prismic-rich-text
             :field="slice.primary.title"
-            class="text-3xl md:text-5xl text-white title"
+            class="text-3xl md:text-5xl md:mb-8 text-white title"
           />
         </transition>
         <prismic-rich-text
@@ -36,7 +36,7 @@
         <arrow class="arrow text-center hidden sm:block" />
       </a>
       <transition-group
-        class="teaser-item-wrapper xl:mt-24"
+        class="teaser-item-wrapper flex-col sm:flex-row xl:mt-4"
         appear
         tag="div"
         @before-enter="itemsBeforeEnter"
@@ -117,10 +117,10 @@ export default {
 .section {
   width: 100%;
   background: black;
-  height: auto;
   background-repeat: no-repeat;
   box-sizing: inherit;
   background-size: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -156,11 +156,11 @@ export default {
 
 .overlay {
   position: absolute;
+  overflow: hidden;
   top: 0;
   bottom: 0;
-  height: auto;
+  height: inherit;
   left: 0;
-  overflow: auto;
   right: 0;
   background-color: rgba(62, 64, 64, 0.7);
 }
@@ -186,11 +186,8 @@ export default {
 
 .teaser-item-wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-self: center;
 }

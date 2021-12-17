@@ -1,10 +1,10 @@
 <template>
-  <section :id="slice.primary.navigationName" class="section">
+  <section :id="slice.primary.navigationName" class="section p-4 xl:pl-[15rem] xl:pr-[15rem]">
     <div class="contact-title-container">
       <prismic-image :field="slice.primary.logo" class="contact-logo" />
       <prismic-rich-text
         :field="slice.primary.title"
-        class="text-2xl tracking-wide"
+        class="text-2xl tracking-wide mt-8"
       />
     </div>
     <prismic-rich-text :field="slice.primary.description" class="mb-14" />
@@ -75,7 +75,6 @@ export default {
   background: hsla(53, 24%, 87%, 0.9);
   color: #111;
   text-align: center;
-  padding: 1rem;
   text-align: left;
   padding-bottom: 3rem;
   overflow: hidden;

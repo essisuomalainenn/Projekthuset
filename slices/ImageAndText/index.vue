@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section h-60 md:h-80"
+    class="section p-4 h-60 md:h-80 xl:pl-[15rem] xl:pr-[30rem] xl:pb-12 xl:pt-12"
     :style="{
       'background-image':
         'url(https://projekthuset.eu/app/uploads/2018/04/projekthuset-meeting.jpg)',
@@ -72,7 +72,6 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   align-content: center;
   justify-content: flex-start;
 }

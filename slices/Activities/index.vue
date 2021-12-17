@@ -1,16 +1,16 @@
 <template>
   <section
     :id="slice.primary.navigationName"
-    class="section p-4 md:pb-0 md:pt-4 md:pl-4 md:pr-4"
+    class="section p-4 md:pb-0 "
     :style="{
       'background-image':
         'url(https://projekthuset.eu/app/uploads/2018/04/projekhuset-work.jpg)',
     }"
   >
     <div class="red-overlay"></div>
-    <div class="container">
+    <div class="container xl:pl-[15rem] xl:pr-[30rem] xl:pb-12">
       <rulerSvg ref="activity" class="ruler hidden md:block xl:ruler-big"/>
-      <div class="activities-title-container">
+      <div class="activities-title-container mt-4">
         <prismic-image :field="slice.primary.logo" class="activity-logo" />
         <prismic-rich-text
           :field="slice.primary.title"

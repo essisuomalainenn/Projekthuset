@@ -1,14 +1,19 @@
 <template>
-  <section :id="slice.primary.navigationName" class="section">
-    <div class="project-title-container">
-      <prismic-image :field="slice.primary.logo" class="project-logo" />
-      <prismic-rich-text
-        :field="slice.primary.title"
-        class="title text-2xl tracking-wide"
-      />
+  <section
+    :id="slice.primary.navigationName"
+    class="section p-4"
+  >
+    <div class="xl:pl-[14rem] xl:pr-[15rem]">
+      <div class="project-title-container mt-8">
+        <prismic-image :field="slice.primary.logo" class="project-logo" />
+        <prismic-rich-text
+          :field="slice.primary.title"
+          class="title text-2xl tracking-wide"
+        />
+      </div>
+      <prismic-rich-text :field="slice.primary.description" />
     </div>
-    <prismic-rich-text :field="slice.primary.description" />
-    <div ref="projects" class="h-96 block w-full">
+    <div ref="projects" class="h-96 block w-full xl:pl-[10rem] xl:pr-[10rem]">
       <ProjectSlider :items="slice.items" />
     </div>
   </section>
@@ -54,7 +59,6 @@ export default {
   background: hsla(53, 24%, 87%, 0.9);
   color: #111;
   text-align: center;
-  padding: 1rem;
   text-align: left;
 }
 

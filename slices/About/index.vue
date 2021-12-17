@@ -1,5 +1,5 @@
 <template>
-  <section :id="slice.primary.navigationName" class="section">
+  <section :id="slice.primary.navigationName" class="section p-4 xl:pl-[15rem] xl:pr-[30rem] lg:pb-12 lg:pt-12">
     <div class="about-title-container">
       <prismic-image :field="slice.primary.logo" class="about-logo" />
       <prismic-rich-text
@@ -60,7 +60,6 @@ export default {
   background: hsla(53, 24%, 87%, 0.9);
   color: #111;
   text-align: center;
-  padding: 1rem;
   text-align: left;
   padding-bottom: 3rem;
 }
