@@ -1,6 +1,6 @@
 <template>
   <section :id="slice.primary.navigationName" class="section p-4 xl:pl-[15rem] xl:pr-[15rem]">
-    <div class="contact-title-container">
+    <div class="contact-title-container mt-4">
       <prismic-image :field="slice.primary.logo" class="contact-logo" />
       <prismic-rich-text
         :field="slice.primary.title"
